@@ -80,7 +80,7 @@ export default async function ProblemDetailPage({
   }
 
   if (!problem) {
-    return <div>문제를 찾을 수 없습니다</div>;
+    return <div>문제를 찾을 수 없습니다.</div>;
   }
 
   return (
@@ -119,8 +119,8 @@ export default async function ProblemDetailPage({
               <input
                 type="text"
                 name="author"
-                className="w-full rounded-xl border border-gray-300 px-4 py-3"
                 placeholder="이름을 입력하세요"
+                className="w-full rounded-xl border border-gray-300 px-4 py-3"
               />
             </div>
 
@@ -131,8 +131,8 @@ export default async function ProblemDetailPage({
               <textarea
                 name="content"
                 rows={4}
-                className="w-full rounded-xl border border-gray-300 px-4 py-3"
                 placeholder="댓글을 입력하세요"
+                className="w-full rounded-xl border border-gray-300 px-4 py-3"
               />
             </div>
 
