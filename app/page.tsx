@@ -63,6 +63,15 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/upload"
+              className="inline-block rounded-xl bg-gray-900 px-6 py-3 text-white hover:bg-gray-800"
+            >
+              문제 업로드
+            </Link>
+          </div>
         </div>
       </div>
     </main>
