@@ -1,4 +1,4 @@
-import UploadForm from "./UploadForm";
+import UploadForm from "./uploadForm";
 
 export default function UploadPage() {
   return (
