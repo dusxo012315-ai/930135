@@ -66,6 +66,15 @@ export default function Home() {
 
           <div className="mt-8 text-center">
             <Link
+              href="/problems"
+              className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-white hover:bg-blue-700"
+            >
+              전체 문제 보기
+            </Link>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
               href="/upload"
               className="inline-block rounded-xl bg-gray-900 px-6 py-3 text-white hover:bg-gray-800"
             >

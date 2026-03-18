@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -88,7 +89,14 @@ export default async function ProblemDetailPage({
       <div className="mx-auto max-w-4xl">
         <h1 className="text-3xl font-bold text-gray-900">{problem.title}</h1>
 
-        <div className="mt-4">
+        <div className="mt-4 flex gap-3">
+          <Link
+            href={`/problems/${id}/edit`}
+            className="rounded-xl bg-blue-600 px-5 py-3 text-white hover:bg-blue-700"
+          >
+            문제 수정
+          </Link>
+
           <form action={deleteProblem}>
             <DeleteButton />
           </form>
