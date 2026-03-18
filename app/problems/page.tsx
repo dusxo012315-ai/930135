@@ -87,7 +87,9 @@ export default async function ProblemsPage({
                 {problem.description}
               </p>
               <p className="mt-2 text-xs text-gray-400">
-                {new Date(problem.created_at).toLocaleString()}
+                {new Date(problem.created_at).toLocaleString("ko-KR", {
+                timeZone: "Asia/Seoul",
+                })}
               </p>
             </Link>
           ))}

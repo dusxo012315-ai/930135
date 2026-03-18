@@ -164,6 +164,13 @@ export default async function ProblemDetailPage({
                   <p className="mt-2 text-sm text-gray-400">
                     {new Date(comment.created_at).toLocaleString("ko-KR", {
                       timeZone: "Asia/Seoul",
+                      year: "numeric",
+                      month: "2-digit",
+                      day: "2-digit",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      second: "2-digit",
+                      hour12: false,
                     })}
                   </p>
                 </div>
