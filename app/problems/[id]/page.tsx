@@ -162,7 +162,9 @@ export default async function ProblemDetailPage({
                   <p className="font-semibold text-gray-900">{comment.author}</p>
                   <p className="mt-2 text-gray-700">{comment.content}</p>
                   <p className="mt-2 text-sm text-gray-400">
-                    {new Date(comment.created_at).toLocaleString()}
+                    {new Date(comment.created_at).toLocaleString("ko-KR", {
+                      timeZone: "Asia/Seoul",
+                    })}
                   </p>
                 </div>
               ))
